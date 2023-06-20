@@ -1,0 +1,169 @@
+.Header {
+    position: sticky;
+    top: 0;
+    background: #444;
+    z-index: 999;
+}
+
+.Header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.Header .logo {
+    display: block;
+    width: 118px;
+    height: 44px;
+    background: url(../images/logo_white_type_02.png)no-repeat;
+    transition: 0.5s;
+}
+
+.Header .Gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.Header .Gnb>ul>li>a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+
+.Header .login {
+    display: flex;
+    gap: 30px;
+}
+
+.Header .login>li>a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.Header.on .logo {
+    background: url(../images/logo_red_type_02.png)no-repeat;
+}
+
+.Main {
+    background: #444;
+}
+
+.MainVisual .main_slide .itm {
+    height: calc(100vh - 100px);
+}
+
+.MainVisual .main_slide .itm01 {
+    background: url(../images/main01.jpg)no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm02 {
+    background: url(../images/main02.jpg)no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm03 {
+    background: url(../images/main03.jpg)no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm04 {
+    background: url(../images/main04.jpg)no-repeat center top/cover;
+}
+
+.MainVisual .main_slide .itm05 {
+    background: url(../images/main05.jpg)no-repeat center top/cover;
+}
+
+.MainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 999;
+}
+
+.MainVisual .arrows li {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.MainVisual .arrows .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 75px;
+    background: url(../images/btn_main_visual_prev_off.png)no-repeat;
+}
+
+.MainVisual .arrows .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 75px;
+    background: url(../images/btn_main_visual_next_off.png)no-repeat;
+}
+
+.MainVisual .arrows .left:hover {
+    transform: rotate(360deg);
+    background: url(../images/btn_main_visual_prev_on.png)no-repeat;
+}
+
+.MainVisual .arrows .right:hover {
+    transform: rotate(360deg);
+    background: url(../images/btn_main_visual_next_on.png)no-repeat;
+}
+
+.MainVisual .dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    display: flex;
+    gap: 30px;
+}
+
+.MainVisual .dots li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.MainVisual .dots li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.MainVisual .dots li:hover::before {
+    width: 15px;
+    height: 15px;
+}
+
+.MainVisual .dots li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.MainVisual .dots li span{
+    font-size: 0;
+}
